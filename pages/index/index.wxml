@@ -1,0 +1,6 @@
+<view class="container">
+<image class="head-pic" src="{{userInfo.avatarUrl}}"></image>
+<button wx:if="{{!hasUserInfo}}" bindgetuserinfo='handleUserInfo' open-type="getUserInfo">授权</button>
+<view class="hello">Hello {{userInfo.nickName}}</view>
+<view class="enter" bindtap='enterMain'>点击进入小程序</view>
+</view>

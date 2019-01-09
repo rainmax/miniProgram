@@ -1,0 +1,9 @@
+.banner{
+  height:480rpx;
+}
+
+.banner image{
+  width:100%;
+}
+
+@import "../template/template.wxss"

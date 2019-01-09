@@ -1,0 +1,24 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail-container">
+  <image class="poster" src="{{newItem.headImgSrc}}"></image>
+  
+  <view class="header-info">
+    <image class="avatar" src="{{newItem.avatar}}"></image>
+    <text>{{newItem.author}}</text>发布于
+    <text>{{newItem.date}}</text>
+    <image class="musicImg" src='{{isMusicPlay ? "/images/music/music-stop.png" :" /images/music/music-start.png"}}' catchtap='playMusic'></image>
+    
+  </view>
+  <text class="title">{{newItem.title}}</text>
+  <view class="control-wrap">
+  <view class="control-img">
+     <image wx:if="{{isCollected}}" src="/images/icon/collection.png" catchtap='collectionHandle'></image>
+     <image wx:if="{{!isCollected}}" src="/images/icon/collection-anti.png" catchtap="collectionHandle">
+     </image>
+     <image src="/images/icon/share.png" catchtap='sharePage'></image>
+  </view>
+  <view class="line"></view>
+  </view>
+  <button open-type='share'>转发此文章</button>
+  <text class="content">{{newItem.detail_content}}</text>
+</view>

@@ -1,0 +1,17 @@
+<template name="newItem">
+<view class="new-list-container">
+  <view class="header">
+    <image class="avatar" src="{{avatar}}"></image>
+    <text>{{date}}</text>
+  </view>
+  <view class="content">
+    <text class="title">{{title}}</text>
+    <image src="{{detail_img}}"></image>
+    <view class="detail-info">{{detail_content}}</view>
+    <view class="footer">
+      <image src="/images/icon/star.png"></image><text class="starNum">88</text>
+      <image src="/images/icon/view.png"></image><text class="viewNum">88</text>
+    </view>
+  </view>
+</view>
+</template>

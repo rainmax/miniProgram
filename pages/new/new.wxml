@@ -1,0 +1,23 @@
+<import src="../template/template.wxml" />
+<swiper class="banner" indicator-dots
+indicator-color="rgb(0,0,0,0.3)">
+  <swiper-item>
+    <image src="/images/detail/carousel/01.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/detail/carousel/02.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/detail/carousel/03.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/detail/carousel/04.jpg"></image>
+  </swiper-item>
+</swiper>
+
+<view wx:for="{{list_data}}" wx:key="index" 
+data-index="{{index}}" catchtap='toDetail'>
+  <template is="newItem" data="{{...item}}"/>
+</view>
+
+

@@ -1,0 +1,38 @@
+.movie-container{
+  display:flex;
+  flex-direction: row;
+  padding:20rpx;
+}
+
+.movie-pic{
+  width:128rpx;
+  height:128rpx;
+}
+
+.movie-info{
+  display:flex;
+  flex-direction: column;
+  width:70%;
+  margin-left: 25rpx;
+}
+
+.title{
+  font-size:32rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  width:80%;
+}
+
+.year{
+  font-size:28rpx;
+  color:gray;
+}
+
+.author{
+  font-size:28rpx;
+}
+
+.grade{
+  color:crimson;
+}
